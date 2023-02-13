@@ -42,6 +42,8 @@
 html {
 	height: 100%;
 	font-size: 14px;
+	font-family: 'Quicksand', sans-serif;
+
 }
 img, object, embed, video {
 	max-width: 100%;
@@ -55,21 +57,26 @@ body {
 	clear: none;
 	float: none;
 	min-height: 100%;
+	font-family: 'Quicksand', sans-serif;
 }
 nav {
 	width: 25%;
 	float: left;
 	margin: 6% 2% 0% 0%;
+	font-family: 'Quicksand', sans-serif;
+
 }
 article {
 	width: 73%;
 	float: left;
 	font-size: 0.8em;
 	text-align: left;
+	font-family: 'Quicksand', sans-serif;
+	
 }
 
 nav ul li {
-	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	font-family: 'Quicksand', sans-serif;
 	font-size: 0.8em;
 }
 
@@ -78,6 +85,8 @@ nav ul li a {
 	text-decoration: none;
 	display: block;
 	margin-bottom: 8%;
+	font-family: 'Quicksand', sans-serif;
+
 }
 nav ul li a:visited {
 	color: #222;
@@ -100,6 +109,8 @@ body h1 {
 
 body article h1 {
 	font-size: 1.15em;
+	font-family: 'Quicksand', sans-serif;
+
 }
 
 header img {
@@ -158,7 +169,8 @@ article div h1 {
 	font-weight: bold;
 }
 
-article p, article address {font-family: "Times New Roman", Times, serif;}
+article p, article address {	font-family: 'Quicksand', sans-serif;
+}
 /* =============================================
 	Tablet layout styles used by devices
 	481px to 768px and cascaded to larger 

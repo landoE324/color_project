@@ -34,6 +34,8 @@ html {
 html, button, input, select, textarea {
 	font-family: serif;
 	color: #222;
+	font-family: 'Quicksand', sans-serif;
+
 }
 body {
 	margin: 0;
@@ -90,17 +92,23 @@ hr {
 	border-top: 1px solid #ccc;
 	margin: 1em 0;
 	padding: 0;
+	font-family: 'Quicksand', sans-serif;
+
 }
 ins {
 	background: #ff9;
 	color: #000;
 	text-decoration: none;
+	font-family: 'Quicksand', sans-serif;
+
 }
 mark {
 	background: #ff0;
 	color: #000;
 	font-style: italic;
 	font-weight: bold;
+	font-family: 'Quicksand', sans-serif;
+
 }
 pre, code, kbd, samp {
 	font-family: monospace, serif;
@@ -121,6 +129,8 @@ sub, sup {
 	line-height: 0;
 	position: relative;
 	vertical-align: baseline;
+	font-family: 'Quicksand', sans-serif;
+
 }
 sup {
 	top: -0.5em;
@@ -193,6 +203,8 @@ button, input, select, textarea {
 	font-size: 100%;
 	margin: 0;
 	vertical-align: baseline;
+	font-family: 'Quicksand', sans-serif;
+
 }
 button, input {
 	line-height: normal;
