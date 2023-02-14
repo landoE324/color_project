@@ -146,7 +146,7 @@ footer {
 	text-align: center;
 	font-size: 0.6em;
 	margin-top: 4%;
-	border-top: 3px outset #cf7b79;
+	border-top: 3px outset #383cbd;
 	font-family: 'Quicksand', sans-serif;
 	clear: both;
 	padding-bottom: 20px;
@@ -292,7 +292,7 @@ article div p {
 
 footer {
 	font-size: 0.9em;
-}
+	bottom: 0;
 }
 
 
@@ -334,4 +334,5 @@ article div p {
 	font-size: 0.95em;
 }
 
+}
 }
