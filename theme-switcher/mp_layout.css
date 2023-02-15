@@ -81,7 +81,7 @@ nav ul li {
 }
 
 nav ul li a {
-	color: #222;
+	color: var(--text);
 	text-decoration: none;
 	display: block;
 	margin-bottom: 8%;
@@ -136,7 +136,7 @@ footer {
 	text-align: center;
 	font-size: 0.6em;
 	margin-top: 4%;
-	border-top: 3px outset #383cbd;
+	border-top: 3px outset var(--foot);
 	font-family: 'Quicksand', sans-serif;
 	clear: both;
 	padding-bottom: 20px;
@@ -163,7 +163,7 @@ article p, article address {	font-family: 'Quicksand', sans-serif;
 }
 
 aside {
-	background-color: white;
+	background-color: var(--bg);
 }
 /* =============================================
 	Tablet layout styles used by devices
@@ -173,7 +173,7 @@ aside {
 */
 
 body {
-	background: linear-gradient(white, lightslategrey);
+	background: var(--bg);
 	margin: 0;
 	padding: 0;
 }
@@ -184,8 +184,8 @@ body {
  .navbar {
 	height: 70px;
 	width: 100%;
-	background: white;
-	color: #18096B;
+	background: var(--bg-nav);
+	color: var(--text);
  }
  .navbar-nav {
 	display: flex;
@@ -198,7 +198,7 @@ body {
 	width: 300px;
 	opacity: 0;
 	z-index: 2;
-	background: #bcc8ce;
+	background: var(--grey);
 	border-bottom-right-radius: 8px;
 	border-bottom-left-radius: 8px;
 	display: flex;
@@ -223,8 +223,12 @@ body {
 	--blue2: #0069BA;
 	--blue3: #0092C6;
 	--white: #ffffff;
-	--grey: #bcc8ce;
+	--grey: #f5f5f5;
 	--black: #26262e;
+	--brown0: #9B6F06;
+	--brown1: #cc9c72;
+	--green0: #008c65;
+	--red0: #c1554e;
 }
 
 
@@ -233,17 +237,28 @@ body {
 	--bg-nav: var(--white);
 	--bg-dropdown: var(--grey);
 	--text: var(--blue0);
-
+	--html-bg: var(--blue0);
+	--foot: var(--blue2);
 }
 
 
 .dark {
-
+	--bg: var(--blue0);
+	--bg-nav: var(--black);
+	--bg-dropdown: var(--blue1);
+	--text: var(--white);
+	--html-bg: var(--black);
+	--foot: var(--white);
 }
 
 
 .burger {
-
+	--bg: var(--brown1);
+	--bg-nav: var(--green1);
+	--bg-dropdown: var(--red0);
+	--text: var(--white);
+	--html-bg: var(--brown0);
+	--foot: var(--green0);
 }
 
 
@@ -255,11 +270,11 @@ html, body {
 
 
 .nav-item a{
-	color: #18096B;
+	color: var(--text);
 }
 
 .dropdown a {
-	color:#18096b;
+	color: var(--text);
 }
 body {
 	width: 89.9%;
@@ -282,7 +297,7 @@ article {
 	width: 94%;
 	float: none;
 	margin: 0px auto;
-	background-color: whitesmoke;
+	background-color: var(--bg-dropdown);
 }
 dl#ct_locations {
 	width: 57%;
@@ -332,7 +347,7 @@ article aside {
 	padding: 1%;
 	width: 35%;
 	font-size: 0.9em;
-	background-color: white;
+	background-color: var(--bg-nav);
 }
 
 article aside h1 {
