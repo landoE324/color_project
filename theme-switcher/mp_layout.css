@@ -88,19 +88,9 @@ nav ul li a {
 	font-family: 'Quicksand', sans-serif;
 
 }
-nav ul li a:visited {
-	color: #222;
-}
-nav ul li a:hover {
-	background-color: #18096b;
-	color: white;
-}
-nav ul li a:focus {
-	outline: thin dotted;
-}
-nav ul li a:hover, nav ul li a:active {
-	outline: 0;
-}
+
+
+
 body h1 {
 	margin: 1%;
 	font-family: 'Quicksand', sans-serif;
@@ -182,12 +172,95 @@ aside {
    =============================================
 */
 
+body {
+	background: linear-gradient(white, lightslategrey);
+	margin: 0;
+	padding: 0;
+}
+ a {
+	color: currentColor;
+	text-decoration: none;
+ }
+ .navbar {
+	height: 70px;
+	width: 100%;
+	background: white;
+	color: #18096B;
+ }
+ .navbar-nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	height: 100%;
+ }
+.dropdown {
+	position: absolute;
+	width: 300px;
+	opacity: 0;
+	z-index: 2;
+	background: #bcc8ce;
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 8px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding: 0.5rem;
+
+	box-shadow: rgba(2, 8, 20, 0.1) 0px 0.175em 0.5em;
+
+	transform: opacity .15s ease-out;
+}
+
+.has-dropdown:focus-within .dropdown{
+	opacity: 1;
+	pointer-events: auto;
+}
+
+
+:root {
+	--blue0: #18096B;
+	--blue1: #003F9C;
+	--blue2: #0069BA;
+	--blue3: #0092C6;
+	--white: #ffffff;
+	--grey: #bcc8ce;
+	--black: #26262e;
+}
+
+
+.light {
+	--bg: linear-gradient(to bottom, var(--white), var(--grey));
+	--bg-nav: var(--white);
+	--bg-dropdown: var(--grey);
+	--text: var(--blue0);
+
+}
+
+
+.dark {
+
+}
+
+
+.burger {
+
+}
+
+
 
 @media only screen and (min-width: 481px) {
 html, body {
 	font-size: 16px;
 }
 
+
+.nav-item a{
+	color: #18096B;
+}
+
+.dropdown a {
+	color:#18096b;
+}
 body {
 	width: 89.9%;
 	padding-left: 1.55%;
@@ -299,32 +372,7 @@ footer {
 	bottom: 0;
 }
 
-body {
-	background: linear-gradient(white, lightslategrey);
-}
 
-.dropdown {
-	position: absolute;
-	width: 300px;
-	opacity: 0;
-	z-index: 2;
-	background: white;
-	border-bottom-right-radius: 8px;
-	border-bottom-left-radius: 8px;
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	padding: 0.5rem;
-
-	box-shadow: rgba(2, 8, 20, 0.1) 0px 0.175em 0.5em;
-
-	transform: opacity .15s ease-out;
-}
-
-.has-dropdown:focus-within .dropdown{
-	opacity: 1;
-	pointer-events: auto;
-}
 /* =============================================
 	Desktop layout styles used by  devices
 	769px and larger.
