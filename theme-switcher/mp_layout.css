@@ -118,6 +118,7 @@ body p, body address {
 dl {
 	margin-left: 2%;
 	font-family: 'Quicksand', sans-serif;
+	color: var(--text);
 }
 dt {
 	display: block;
@@ -159,11 +160,14 @@ article div h1 {
 	font-weight: bold;
 }
 
-article p, article address {	font-family: 'Quicksand', sans-serif;
+article p, article address {	
+	font-family: 'Quicksand', sans-serif;
+	color: var(--text);
 }
 
 aside {
 	background-color: var(--bg);
+	color: var(--text);
 }
 /* =============================================
 	Tablet layout styles used by devices
@@ -223,22 +227,25 @@ body {
 	--blue2: #0069BA;
 	--blue3: #0092C6;
 	--white: #ffffff;
-	--grey: #f5f5f5;
+	--grey0: #f5f5f5;
+	--grey1: #5a5656;
 	--black: #26262e;
 	--brown0: #9B6F06;
 	--brown1: #cc9c72;
 	--green0: #008c65;
 	--red0: #c1554e;
+
 }
 
 
 .light {
 	--bg: linear-gradient(to bottom, var(--white), var(--grey));
 	--bg-nav: var(--white);
-	--bg-dropdown: var(--grey);
-	--text: var(--blue0);
+	--bg-dropdown: var(--grey0);
+	--text: var(--white0);
 	--html-bg: var(--blue0);
 	--foot: var(--blue2);
+	--bg-other: var(--white);
 }
 
 
@@ -249,16 +256,18 @@ body {
 	--text: var(--white);
 	--html-bg: var(--black);
 	--foot: var(--white);
+	--bg-other: var(--grey1);
 }
 
 
-.burger {
+.sandwich {
 	--bg: var(--brown1);
 	--bg-nav: var(--green1);
 	--bg-dropdown: var(--red0);
 	--text: var(--white);
 	--html-bg: var(--brown0);
 	--foot: var(--green0);
+	--bg-other: var(--grey1);
 }
 
 
@@ -268,7 +277,10 @@ html, body {
 	font-size: 16px;
 }
 
-
+.navbar {
+	background-color: var(--html-bg);
+	color: var(--bg-nav);
+}
 .nav-item a{
 	color: var(--text);
 }
@@ -291,6 +303,7 @@ header h1 {
 
 body article h1 {
    font-size: 1.75em;
+   color: var(--text);
 }
 
 article {
@@ -362,6 +375,7 @@ article div {
 	width: 30.3%;
 	margin: 0% 1% 2% 1%;
 	border: 1px solid rgb(151, 151, 151);
+	background-color: var(--bg-other);
 }
 
 article div:first-of-type {
@@ -373,8 +387,8 @@ article div h1 {
 	font-weight: normal;
 	font-size: 1em;
 	border-bottom: 1px solid rgb(151, 151, 151);
-	background-color: #634db3;
-	color: white;
+	background-color: var(--bg-nav);
+	color: var(--text);
 }
 
 article div p {
