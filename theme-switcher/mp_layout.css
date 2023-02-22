@@ -257,7 +257,7 @@ body {
 	--text: var(--white);
 	--html-bg: var(--black);
 	--foot: var(--white);
-	--bg-other: var(--blue2);
+	--bg-other: var(--grey1);
 	--logo: var(--white);
 }
 
@@ -270,7 +270,7 @@ body {
 	--html-bg: var(--green0);
 	--foot: var(--green0);
 	--bg-other: var(--brown0);
-	--logo: var(--green)
+	--logo: var(var(--green0))
 }
 
 
@@ -428,7 +428,20 @@ li.list {
 	color: var(--text);
 }
 
+@keyframes color-rotate {
+	from {
+		filter: hue-rotate(0deg);
+	}
+	to {
+		filter: hue-rotate(360deg);
+	}
+}
 
+.sammy:hover {
+	animation: color-rotate 1s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
 /* =============================================
 	Desktop layout styles used by  devices
 	769px and larger.
