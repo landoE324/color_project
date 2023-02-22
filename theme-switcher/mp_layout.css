@@ -246,6 +246,7 @@ body {
 	--html-bg: var(--blue0);
 	--foot: var(--blue2);
 	--bg-other: var(--white);
+	--logo: var(--blue1);
 }
 
 
@@ -256,18 +257,20 @@ body {
 	--text: var(--white);
 	--html-bg: var(--black);
 	--foot: var(--white);
-	--bg-other: var(--grey1);
+	--bg-other: var(--blue2);
+	--logo: var(--white);
 }
 
 
 .sandwich {
-	--bg: var(--brown1);
+	--bg: var(--green0);
 	--bg-nav: var(--green1);
 	--bg-dropdown: var(--red0);
 	--text: var(--white);
-	--html-bg: var(--brown0);
+	--html-bg: var(--green0);
 	--foot: var(--green0);
-	--bg-other: var(--grey1);
+	--bg-other: var(--brown0);
+	--logo: var(--green)
 }
 
 
@@ -285,8 +288,9 @@ html, body {
 	color: var(--text);
 }
 
-.dropdown a {
+.dropdown {
 	color: var(--text);
+	background-color: var(--bg);
 }
 body {
 	width: 89.9%;
@@ -399,6 +403,29 @@ article div p {
 footer {
 	font-size: 0.9em;
 	bottom: 0;
+	color: var(--text);
+}
+
+html {
+	background-color: var(--html-bg);
+}
+
+
+body {
+	background-color: var(--bg-other);
+}
+li.list {
+	margin: 0;
+	padding: 10px 0 10px 60px;
+	list-style: none;
+	background-image: url(samich.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 50px;
+	
+}
+.catering {
+	color: var(--text);
 }
 
 
@@ -414,7 +441,6 @@ html, body {
 }
 
 html {
-	background-color: navy;
 	margin: 0px auto;
 }
 body {
@@ -425,7 +451,6 @@ body {
 	margin: 0px auto auto auto;
 	clear: none;
 	float: none;
-	background-color: white;
 	-moz-box-shadow: rgba(31, 61, 31, 0.9) 20px 0px 25px,  rgba(31, 61, 31, 0.9) -20px 0px 25px;
 	-webkit-box-shadow: rgba(31, 61, 31, 0.9) 20px 0px 25px,  rgba(31, 61, 31, 0.9) -20px 0px 25px;
 	box-shadow: rgba(31, 61, 31, 0.9) 20px 0px 25px,  rgba(31, 61, 31, 0.9) -20px 0px 25px;
